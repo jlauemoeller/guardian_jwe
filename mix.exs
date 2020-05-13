@@ -47,7 +47,12 @@ defmodule Guardian.Token.Jwe.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:guardian, "~> 1.0"},
+      {:guardian, "~> 2.1"},
+      {:jason, "~> 1.1"},
+      {:uuid, "~> 1.1"},
+
+      # Optional dependencies
+      {:plug, "~> 1.3.3 or ~> 1.4", optional: true},
 
       {:credo, "~> 0.8.6", only: [:dev, :test]},
       {:ex_doc, "~> 0.16", only: :dev, runtime: false}
